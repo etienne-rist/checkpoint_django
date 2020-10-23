@@ -1,0 +1,57 @@
+{% extends 'book/base.html' %}
+{% block content %}
+{% load static %}
+<!-- <div class="container hauteurbox">
+    <div class="row"> -->
+<div class="col-lg-12">
+    <!-- <hr> -->
+    <h2 class="intro-text text-center">All the travels</h2>
+    <!-- <hr class="detail-separator"> -->
+</div>
+<div class="card shadow rounded m-3">
+    <div class="row">
+
+        <div class="col-lg-6 text-center align-self-center">
+            <a class='navbar-brand' href="{% url 'book:trav1' %}">
+                <img class="img-dimension" src="{% static 'club/img/enfants.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="col-lg-6 align-self-center">
+            <p class="text-acceuil2">PARIS (1er voyage)</p>
+            <p class="text-acceuil2">3 steps</p>
+        </div>
+
+    </div>
+</div>
+<div class="card shadow m-3">
+    <div class="row">
+        <div class="col-lg-6 text-center align-self-center">
+            <a class='navbar-brand' href="{% url 'book:trav2' %}">
+                <img class="img-dimension" src="{% static 'club/img/enfants.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="col-lg-6 align-self-center">
+            <p class="text-acceuil2">LONDRES (2eme voyage)</p>
+            <p class="text-acceuil2">3 steps
+            </p>
+        </div>
+
+    </div>
+</div>
+<div class="card shadow m-3">
+    <div class="row">
+
+        <div class="col-lg-6 text-center align-self-center">
+            <a class='navbar-brand' href="{% url 'club:article3' %}">
+                <img class="img-dimension" src="{% static 'club/img/enfants.jpg' %}" alt="">
+            </a>
+        </div>
+        <div class="col-lg-6 align-self-center">
+            <p class="text-acceuil2">MADRID (3eme voyage)</p>
+            <p class="text-acceuil2">3step</p>
+        </div>
+    </div>
+</div>
+<!-- </div>
+</div> -->
+{% endblock %}
